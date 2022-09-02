@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pattern</title>
+</head>
+
+<body>
+  <input type="number" id="number" name="number" placeholder="Enter pattern number" />
+  <input type="button" onclick="patternNumber();" value="check" />
+</body>
+<script>
+  function patternNumber() {
+    var patternNumber = document.getElementById("number").value;
+    for (var i = 1; i <= patternNumber; i++) {
+      for (var j = 1; j <= patternNumber-i; j++) {
+        document.write('&nbsp;');
+      }
+      for(var k=1;k<=i;k++){
+        document.write('*');
+      }
+      for (var l = 2;l<= i; l++) {
+        document.write('*');
+      }
+      document.write("<br />");
+    }
+  }
+</script>
+
+</html>

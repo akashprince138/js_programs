@@ -1,0 +1,11 @@
+let data = new Set();
+data.add(10);
+data.add(20);
+data.add(30);
+data.add(40);
+data.add(50);
+console.log("data", data);
+data.delete(30);
+console.log("data2", data);
+data.clear();
+console.log("data3", data);
